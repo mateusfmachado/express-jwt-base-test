@@ -1,0 +1,9 @@
+CONFIG DE TESTE
+
+ab -n 1000 http://localhost:9800/
+
+REQUESTs ON "/": 1128.63 req/s
+
+ab -n 1000 -H 'Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYzJkZjk4MWZlYTgxNTI2ODE5Y2I1MSIsImVtYWlsIjoidGVzdGVAZ21haWwuY29tIiwiZXhwIjoxNTI3OTA0NjY0LCJpYXQiOjE1MjI3MjA2NjR9.L9BTHOm8Fk_Ne3QA77ynOXZa3gjSVu7vR0cGJNzCS3I' http://localhost:9800/api/users
+
+REQUESTs on "/API/USERS": 775.87 req/s
